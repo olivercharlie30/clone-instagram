@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Single Page Website</title>
+</head>
+<body>
+      <leftbar>
+        <div class="leftbarWarrper">
+            <h3>Instagram</h3>
+            <div class="homeIcon">
+            <span>
+                <i class="fa-solid fa-house"></i>
+                Home
+            </span>
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </span>
+            <span>
+                <i class="fa-regular fa-compass"></i>
+                 Explore
+            </span>
+            <span>
+                <i class="fa-solid fa-photo-film"></i>
+                Reels
+            </span>
+            <span>
+                <i class="fa-solid fa-paper-plane"></i>
+                Message
+            </span>
+            <span>
+                <i class="fa-regular fa-bell"></i>
+                Notification
+            </span>
+            <span>
+                <i class="fa-solid fa-layer-plus"></i>
+                Create
+            </span>
+            <span>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </span>
+            <span id="lightMood">
+                <i class="fa-solid fa-gear"></i>
+                Setting
+            </span>
+            <div class="settingBody" id="settingBody">
+                <i class="fa-solid fa-cloud-sun" id="settingIconSunDark"></i>
+                
+            </div>
+
+            </div>
+        </div>  
+      </leftbar>
+      <rightbar></rightbar>
+      <main></main>
+
+    <script type="module" src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+    body{
+        display: grid;
+        grid-template-columns: 1fr 700px 1fr;
+        grid-template-areas: 
+        "leftbar main rightbar";
+    }
+    .dark{
+        background-color: black;
+        color: white;
+    }
+    leftbar{
+        grid-area: leftbar;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    leftbar > .leftbarWarrper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+     /* JAVASCRIPT FUNCTION */
+      /* .lightDarkSetting{
+        background-color: red;
+        height: 50px;
+        color: black;
+      } */
+       .settingBody{
+      display: none;
+      padding: 50px 50px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border-radius: 3px;
+    
+      }
+      .settings{
+        display: flex;
+        justify-content: flex-start;
+        justify-content: flex-start
+        
+        
+        
+        ;
+      }
+
+    .leftbarWarrper > h3{
+        padding-top: 50px;
+        font-size: xx-large;
+    }
+    .leftbarWarrper .homeIcon{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: rgb(85, 84, 84);
+        font-weight: 200;
+        cursor: pointer;
+    }
+    .homeIcon > span{
+        font-weight: 100;
+        transition: 0.5s;
+        padding: 3px;
+    }
+    .homeIcon > span:hover{
+        background-color: rgb(192, 190, 190);
+        color: white;
+        padding: 3px;
+        border-radius: 6px;
+    }
+    rightbar{
+        grid-area: rightbar;
+
+        height: 100vh;
+    }
+    main{
+        grid-area: main;
+        height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+   
+
+</style>
+</html>
