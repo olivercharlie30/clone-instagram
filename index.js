@@ -1,7 +1,10 @@
+
+
 const lightMood = document.querySelector("#lightMood");
 const settingBody = document.querySelector("#settingBody");
 const settingIconSunDark = document.querySelector("#settingIconSunDark");
 const body = document.querySelector("body");
+const notification = document.querySelector("#Notification");
 
 
 
@@ -17,6 +20,7 @@ const body = document.querySelector("body");
 //     lightMood.append(div);
     
 // }
+
 
 lightMood.addEventListener("click", ()=> {
     settingBody.classList.toggle("settings");

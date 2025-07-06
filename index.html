@@ -31,7 +31,7 @@
                 <i class="fa-solid fa-paper-plane"></i>
                 Message
             </span>
-            <span>
+            <span id="Notification">
                 <i class="fa-regular fa-bell"></i>
                 Notification
             </span>
@@ -56,7 +56,115 @@
         </div>  
       </leftbar>
       <rightbar></rightbar>
-      <main></main>
+      <main>
+
+        <div class="postContent" id="postContent">
+            <div class="wrapperPostContent">
+                <div class="content">
+                    <div class="profileDiv">
+                        <img class="imageProfile" src="uploads/IVANA-ALAWI.png" alt="" width="100px"/>
+                        <h2 class="profileName">oliver programmer</h2>
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                         <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                    
+                    <h3>Title i know the programmer is so hard..</h3>
+                    <img class="imageContent" src="uploads/ivanaimages.jpg" alt="" width="100%"/>
+
+                    <div class="likeIconSection">
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-comment"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </span>
+                        <span class="fa-bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </span>
+                    </div>
+                    <div class="countReact">
+                        185,521 likes
+                    </div>
+    
+                        <p class="paragraph"><bold style="font-weight: 600;">oliver programmer</bold >
+                            Only programmers Will get this👨‍💻🤠
+                            What is compiler?
+                            Share with your friends 😉🚀
+                            Follow @know.programming for more 🙌🚦.</p>
+
+                    <div class="commentSection">
+                        <label for="comment">Add a Comment...</label>
+                        <textarea name="comment" id="comment">
+                                    
+                        </textarea>
+
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="postContent" id="postContent">
+            <div class="wrapperPostContent">
+                <div class="content">
+                    <div class="profileDiv">
+                        <img class="imageProfile" src="uploads/ivanaProfile.jpg" alt="" width="100px"/>
+                        <h2 class="profileName">oliver programmer</h2>
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                         <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                    
+                    <h3>Title i know the programmer is so hard..</h3>
+                    <img class="imageContent" src="uploads/ivanaProfile.jpg" alt="" width="100%"/>
+
+                    <div class="likeIconSection">
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-comment"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </span>
+                        <span class="fa-bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </span>
+                    </div>
+                    <div class="countReact">
+                        185,521 likes
+                    </div>
+    
+                        <p class="paragraph"><bold style="font-weight: 600;">oliver programmer</bold >
+                            Only programmers Will get this👨‍💻🤠
+                            What is compiler?
+                            Share with your friends 😉🚀
+                            Follow @know.programming for more 🙌🚦.</p>
+
+                    <div class="commentSection">
+                        <label>Add a Comment...</label>
+                        <textarea name="comment" id="comment">
+                                    
+                        </textarea>
+
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+      </main>
+
+
+
+
+
 
     <script type="module" src="app.js"></script>
     <script src="index.js"></script>
@@ -86,6 +194,8 @@
         display: flex;
         flex-direction: column;
         justify-content:flex-start;
+
+        position: fixed;
     }
     leftbar > .leftbarWarrper{
         display: flex;
@@ -147,9 +257,125 @@
     main{
         grid-area: main;
         height: 100vh;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     }
-   
 
+    main .postContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: small;
+        height: 80vh;
+        border-top: 1px solid rgb(73, 71, 71);
+
+        position: relative;
+    }
+    main .postContent .wrapperPostContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .postContent .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .content .profileDiv{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        cursor: pointer;
+   
+    }
+    .imageProfile{
+        border-radius: 60px;
+        width: 60px;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .content .profileDiv .fa-ellipsis{
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        font-size: large;
+    
+    }
+    h3{
+        margin-left: 50px;
+    }
+    .imageContent{
+        height: 50vh;
+        width: 100%;
+        padding: 3px;
+        cursor: pointer;
+    }
+    .postContent .likeIconSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: x-large;
+        gap: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fa-bookmark{
+    position: absolute;
+    right: 10px;
+   }
+   .countReact{
+    padding: 10px;
+    
+   }
+   .paragraph{
+    padding: 5px 5px;
+    cursor: pointer;
+   }
+   .commentSection{
+     padding: 10px;
+     width: 100%;
+     margin-top: 10px;
+   }
+   .commentSection > label{
+    border: none;
+    /* border-bottom: 1px solid rgb(71, 70, 70); */
+    width: 100%;
+    cursor: pointer;
+   }
+   .commentSection > textarea{
+    border: none;
+    border-bottom: 1px solid rgb(71, 70, 70);
+    width: 100%;
+    cursor: pointer;
+    display: none;
+   }
+
+   @media(max-width: 1200px) and (min-width:500px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    }
+    leftbar{
+        display: none;
+    
+   }
+}
+
+   @media (max-width: 499px) and (min-width: 320px){
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "main";
+    }
+    leftbar{
+        display: none;
+    }
+   }
 </style>
 </html>

@@ -1,6 +1,7 @@
 import { notification } from "./notification.js";
 
 
+
 const getDataFromAnotherFileJs = ()=> {
    let header = document.querySelector("#header");
     
@@ -14,3 +15,8 @@ const getDataFromAnotherFileJs = ()=> {
 }
 getDataFromAnotherFileJs();
 
+
+// NOTIFICATION
+// notification.addEventListener("click", ()=> {
+      
+// })
