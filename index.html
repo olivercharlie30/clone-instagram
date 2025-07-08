@@ -180,7 +180,7 @@
     }
     body{
         display: grid;
-        grid-template-columns: 1fr 700px 1fr;
+        grid-template-columns: 1fr 600px 1fr;
         grid-template-areas: 
         "leftbar main rightbar";
     }
@@ -219,11 +219,6 @@
       .settings{
         display: flex;
         justify-content: flex-start;
-        justify-content: flex-start
-        
-        
-        
-        ;
       }
 
     .leftbarWarrper > h3{
@@ -257,6 +252,9 @@
     main{
         grid-area: main;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     }
 
@@ -267,14 +265,14 @@
         margin-top: 20px;
         font-size: small;
         height: 80vh;
-        border-top: 1px solid rgb(73, 71, 71);
-
+        
         position: relative;
     }
     main .postContent .wrapperPostContent{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
     }
     .postContent .content{
         display: flex;
@@ -357,11 +355,17 @@
     body{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        
     }
     leftbar{
         display: none;
     
+   }
+   main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
    }
 }
 
@@ -376,6 +380,12 @@
     leftbar{
         display: none;
     }
+      main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 70px;
+   }
    }
 </style>
 </html>
